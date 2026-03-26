@@ -266,7 +266,7 @@
     </inertial>
   </link>
   <joint name="allegro_mount_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 1.57 3.14" xyz="-0.07 -0.065 -0.09"/>
     <parent link="allegro_mount"/>
     <child link="palm_link"/>
   </joint>
@@ -392,7 +392,7 @@
     </inertial>
   </link>
   <joint name="index_biotac_tip_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
     <parent link="index_link_3"/>
     <child link="index_biotac_tip"/>
   </joint>
@@ -531,7 +531,7 @@
     </inertial>
   </link>
   <joint name="middle_biotac_tip_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
     <parent link="middle_link_3"/>
     <child link="middle_biotac_tip"/>
   </joint>
@@ -670,7 +670,7 @@
     </inertial>
   </link>
   <joint name="ring_biotac_tip_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
     <parent link="ring_link_3"/>
     <child link="ring_biotac_tip"/>
   </joint>
@@ -809,7 +809,7 @@
     </inertial>
   </link>
   <joint name="thumb_biotac_tip_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="3.14 0 -1.54" xyz="-0.01 -0.05 -0.0125" />
     <parent link="thumb_link_3"/>
     <child link="thumb_biotac_tip"/>
   </joint>

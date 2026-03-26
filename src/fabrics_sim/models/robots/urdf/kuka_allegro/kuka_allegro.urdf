@@ -141,7 +141,7 @@
 	<link name="palm_link">
 		<inertial>
 			<mass value="0.237" />
-			<origin xyz="0 0 0" rpy="0 0 0" />
+			<origin xyz="0 0 0" rpy="3.14 0 0" />
 			<inertia ixx="0.000354094" ixy="-0.000001193" ixz="-0.000002445" iyy="0.000260915" iyz="-0.000002905" izz="0.000529257" />
 		</inertial>
 		<visual>
@@ -500,13 +500,13 @@
 		<child link="allegro_mount" />
 		<origin xyz="0.06 -0.04 0.01" rpy="3.14159 0 0" />
 	</joint>
-	<joint name="allegro_mount_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0 0 0" />
-		<parent link="allegro_mount" />
-		<child link="palm_link" />
+ 	 <joint name="allegro_mount_joint" type="fixed">
+  	  <origin rpy="0 1.57 3.14" xyz="-0.07 -0.065 -0.09"/>
+    	<parent link="allegro_mount"/>
+    	<child link="palm_link"/>
 	</joint>
 	<joint name="index_biotac_tip_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0 0 0" />
+		<origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
 		<parent link="index_link_3" />
 		<child link="index_biotac_tip" />
 	</joint>
@@ -543,7 +543,7 @@
 		<dynamics damping="0.0" friction="0.0" />
 	</joint>
 	<joint name="middle_biotac_tip_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0 0 0" />
+		<origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
 		<parent link="middle_link_3" />
 		<child link="middle_biotac_tip" />
 	</joint>
@@ -580,7 +580,7 @@
 		<dynamics damping="0.0" friction="0.0" />
 	</joint>
 	<joint name="ring_biotac_tip_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0 0 0" />
+		<origin rpy="3.14 0 -1.54" xyz="-0.01 -0.04 0.016" />
 		<parent link="ring_link_3" />
 		<child link="ring_biotac_tip" />
 	</joint>
@@ -617,7 +617,7 @@
 		<dynamics damping="0.0" friction="0.0" />
 	</joint>
 	<joint name="thumb_biotac_tip_joint" type="fixed">
-		<origin rpy="0 0 0" xyz="0 0 0" />
+		<origin rpy="3.14 0 -1.54" xyz="-0.01 -0.05 -0.0125" />
 		<parent link="thumb_link_3" />
 		<child link="thumb_biotac_tip" />
 	</joint>
@@ -660,12 +660,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.106865" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_1_sphere_0">
 		<visual>
@@ -674,12 +668,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.106078" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_2_sphere_0">
 		<visual>
@@ -688,12 +676,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.102232" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_2_sphere_1">
 		<visual>
@@ -702,12 +684,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.085125" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_3_sphere_0">
 		<visual>
@@ -716,12 +692,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.10456" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_4_sphere_0">
 		<visual>
@@ -730,12 +700,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.093645" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_4_sphere_1">
 		<visual>
@@ -744,12 +708,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.073883" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_5_sphere_0">
 		<visual>
@@ -758,12 +716,6 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.074265" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_5_sphere_1">
 		<visual>
@@ -772,460 +724,262 @@
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.075691" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_6_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.093184" />
+				<sphere radius="0.074547" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.093184" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="iiwa7_link_7_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.046394" />
+				<sphere radius="0.037115" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.046394" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="palm_link_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.064833" />
+				<sphere radius="0.0388998" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.064833" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="palm_link_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.063931" />
+				<sphere radius="0.0383586" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.063931" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_0_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.030195" />
+				<sphere radius="0.018117" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.030195" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_0_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.029524" />
+				<sphere radius="0.0177144" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.029524" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_1_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025406" />
+				<sphere radius="0.0152436" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025406" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_2_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025943" />
+				<sphere radius="0.0155658" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025943" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_2_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.025238" />
+				<sphere radius="0.0151428" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025238" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_3_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025322" />
+				<sphere radius="0.0151932" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025322" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="index_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.023613" />
+				<sphere radius="0.0141678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.023613" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_0_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.030195" />
+				<sphere radius="0.018117" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.030195" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_0_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.029524" />
+				<sphere radius="0.0177144" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.029524" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_1_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025406" />
+				<sphere radius="0.0152436" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025406" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_2_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025943" />
+				<sphere radius="0.0155658" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025943" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_2_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.025238" />
+				<sphere radius="0.0151428" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025238" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_3_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025322" />
+				<sphere radius="0.0151932" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025322" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="middle_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.023613" />
+				<sphere radius="0.0141678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.023613" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_0_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.030195" />
+				<sphere radius="0.018117" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.030195" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_0_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.029524" />
+				<sphere radius="0.0177144" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.029524" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_1_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025406" />
+				<sphere radius="0.0152436" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025406" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_2_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025943" />
+				<sphere radius="0.0155658" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025943" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_2_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.025238" />
+				<sphere radius="0.0151428" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025238" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_3_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025322" />
+				<sphere radius="0.0151932" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025322" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="ring_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.023613" />
+				<sphere radius="0.0141678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.023613" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_0_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.025406" />
+				<sphere radius="0.0152436" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025406" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_1_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.017487" />
+				<sphere radius="0.0104922" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.017487" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_1_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.017227" />
+				<sphere radius="0.0103362" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.017227" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_2_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.027454" />
+				<sphere radius="0.0164724" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.027454" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_2_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.025244" />
+				<sphere radius="0.0151464" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.025244" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_3_sphere_0">
 		<visual>
 			<geometry>
-				<sphere radius="0.024778" />
+				<sphere radius="0.0148668" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.024778" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<link name="thumb_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.027507" />
+				<sphere radius="0.0165042" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
-		<collision>
-			<geometry>
-				<sphere radius="0.027507" />
-			</geometry>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-		</collision>
 	</link>
 	<joint name="iiwa7_link_0_sphere_0_joint" type="fixed">
 		<parent link="iiwa7_link_0" />
@@ -1476,36 +1230,36 @@
 	</link>
 
 	<joint name="palm_x_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="0.25 0. 0."/>
+		<origin rpy="3.14 0. 0." xyz="0.25 0. 0."/>
 		<parent link="palm_link"/>
 		<child link="palm_x"/>
 	</joint>
 	<joint name="palm_x_neg_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="-0.25 0. 0."/>
+		<origin rpy="3.14 0. 0." xyz="-0.25 0. 0."/>
 		<parent link="palm_link"/>
 		<child link="palm_x_neg"/>
 	</joint>
 
 	<joint name="palm_y_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="0. 0.25 0."/>
+		<origin rpy="3.14 0. 0." xyz="0. -0.25 0."/>
 		<parent link="palm_link"/>
 		<child link="palm_y"/>
 	</joint>
 
 	<joint name="palm_y_neg_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="0. -0.25 0."/>
+		<origin rpy="3.14 0. 0." xyz="0. 0.25 0."/>
 		<parent link="palm_link"/>
 		<child link="palm_y_neg"/>
 	</joint>
 
 	<joint name="palm_z_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="0. 0. 0.25"/>
+		<origin rpy="3.14 0. 0." xyz="0. 0. -0.25"/>
 		<parent link="palm_link"/>
 		<child link="palm_z"/>
 	</joint>
 
 	<joint name="palm_z_neg_joint" type="fixed">
-		<origin rpy="0. 0. 0." xyz="0. 0. -0.25"/>
+		<origin rpy="3.14 0. 0." xyz="0. 0. 0.25"/>
 		<parent link="palm_link"/>
 		<child link="palm_z_neg"/>
 	</joint>
