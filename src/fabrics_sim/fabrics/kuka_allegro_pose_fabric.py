@@ -51,7 +51,7 @@ class KukaAllegroPoseFabric(BaseFabric):
         # Going to set a default config for the cspace attractor that gets
         # used until an actual cspace command comes in
         default_config =\
-            torch.tensor([-0.85, -0.50,  0.76,  1.25, -1.76, 0.90, 0.64,
+            torch.tensor([-0.39, -0.61,  0.,  0.70, -3.35, 0.31, 0.31,
                           0.0, 0.75, 0.75, 0.75,
                           0.0, 0.75, 0.75, 0.75,
                           0.0, 0.75, 0.75, 0.75,
@@ -195,7 +195,7 @@ class KukaAllegroPoseFabric(BaseFabric):
         taskmap_name = "palm"
         # TODO: make the control point frames all the points in the gripper head and update code in
         # target point calculation to reflect
-        control_point_frames = ["palm_link",
+        control_point_frames = ["_virtual_palm_link",
                                 "palm_x", "palm_x_neg",
                                 "palm_y", "palm_y_neg",
                                 "palm_z", "palm_z_neg"]
