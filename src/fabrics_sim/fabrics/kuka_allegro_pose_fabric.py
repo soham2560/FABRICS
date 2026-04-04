@@ -51,7 +51,7 @@ class KukaAllegroPoseFabric(BaseFabric):
         # Going to set a default config for the cspace attractor that gets
         # used until an actual cspace command comes in
         default_config =\
-            torch.tensor([-0.39, -0.61,  0.,  0.70, -3.35, 0.31, 0.31,
+            torch.tensor([-0.64, -0.64,  0.0,  0.38, 0.15, 0.94, -0.65,
                           0.0, 0.75, 0.75, 0.75,
                           0.0, 0.75, 0.75, 0.75,
                           0.0, 0.75, 0.75, 0.75,
