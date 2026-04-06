@@ -165,7 +165,7 @@ fabric_params:
                                     ["thumb_link_2", "iiwa7_link_2"],
                                     ["thumb_link_3", "iiwa7_link_2"]]
     cspace_damping:
-      gain: 20.
+      gain: 10.
     speed_control:
       active: False
       energy_target: 10.
