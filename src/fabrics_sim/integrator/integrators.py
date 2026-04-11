@@ -24,6 +24,7 @@ class DisplacementIntegrator():
         Constructor. Saves off the fabric object.
         """
         self._fabric = fabric
+        self.vel_limit = 2.0 
     
     def step(self, joint_position, joint_velocity, joint_accel, timestep):
         """
@@ -40,9 +41,12 @@ class DisplacementIntegrator():
         
         self._masses, self._forces, self._masses_inv = self._fabric(joint_position, joint_velocity, timestep)
         joint_accel = -torch.bmm(self._masses_inv, self._forces.unsqueeze(2)).squeeze(2)
-        joint_position = joint_position + timestep * joint_velocity + .5 * timestep ** 2 * joint_accel
+        pos_delta = timestep * joint_velocity + .5 * timestep ** 2 * joint_accel
+        max_delta = self.vel_limit * timestep
+        pos_delta = torch.clamp(pos_delta, -max_delta, max_delta)
+        joint_position = joint_position + pos_delta
         joint_velocity = joint_velocity + timestep * joint_accel
-
+        joint_velocity = torch.clamp(joint_velocity, -self.vel_limit, self.vel_limit)
         return joint_position, joint_velocity, joint_accel
 
 class ExplicitEulerIntegrator():

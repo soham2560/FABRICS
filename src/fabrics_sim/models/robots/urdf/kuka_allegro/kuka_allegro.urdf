@@ -1017,7 +1017,7 @@
 	<link name="index_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.0141678" />
+				<sphere radius="0.0161678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
@@ -1073,7 +1073,7 @@
 	<link name="middle_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.0141678" />
+				<sphere radius="0.0161678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
@@ -1129,7 +1129,7 @@
 	<link name="ring_link_3_sphere_1">
 		<visual>
 			<geometry>
-				<sphere radius="0.0141678" />
+				<sphere radius="0.0161678" />
 			</geometry>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 		</visual>
@@ -1288,7 +1288,7 @@
 	<joint name="index_link_3_sphere_1_joint" type="fixed">
 		<parent link="index_link_3" />
 		<child link="index_link_3_sphere_1" />
-		<origin xyz="-0.0011503613989155698 -0.029922559023194274 0.015378736681818325" rpy="0 0 0" />
+		<origin xyz="-0.0011503613989155698 -0.034922559023194274 0.015378736681818325" rpy="0 0 0" />
 	</joint>
 	<joint name="middle_link_0_sphere_0_joint" type="fixed">
 		<parent link="middle_link_0" />
@@ -1323,7 +1323,7 @@
 	<joint name="middle_link_3_sphere_1_joint" type="fixed">
 		<parent link="middle_link_3" />
 		<child link="middle_link_3_sphere_1" />
-		<origin xyz="-0.0011503613989155767 -0.029922559023194288 0.015378736681818323" rpy="0 0 0" />
+		<origin xyz="-0.0011503613989155767 -0.034922559023194274 0.015378736681818323" rpy="0 0 0" />
 	</joint>
 	<joint name="ring_link_0_sphere_0_joint" type="fixed">
 		<parent link="ring_link_0" />
@@ -1358,7 +1358,7 @@
 	<joint name="ring_link_3_sphere_1_joint" type="fixed">
 		<parent link="ring_link_3" />
 		<child link="ring_link_3_sphere_1" />
-		<origin xyz="-0.0011503613989155715 -0.029922559023194274 0.015378736681818325" rpy="0 0 0" />
+		<origin xyz="-0.0011503613989155715 -0.034922559023194274 0.015378736681818325" rpy="0 0 0" />
 	</joint>
 	<joint name="thumb_link_0_sphere_0_joint" type="fixed">
 		<parent link="thumb_link_0" />
@@ -1393,7 +1393,7 @@
 	<joint name="thumb_link_3_sphere_1_joint" type="fixed">
 		<parent link="thumb_link_3" />
 		<child link="thumb_link_3_sphere_1" />
-		<origin xyz="0.0006064943401055782 -0.038899384363043056 -0.013859905498464779" rpy="0 0 0" />
+		<origin xyz="0.0006064943401055782 -0.04899384363043056 -0.013859905498464779" rpy="0 0 0" />
 	</joint>
 
 	<link name="_virtual_palm_link">

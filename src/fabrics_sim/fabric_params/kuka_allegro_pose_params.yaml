@@ -172,7 +172,7 @@ fabric_params:
       damping: 100.
     joint_limits:
       active: True
-      acceleration: [7.5, 7.5, 10., 10., 10., 20., 20.,
+      acceleration: [5.0, 5.0, 5.0, 5.0, 5.0, 10., 10.,
                      22.5, 22.5, 22.5, 22.5,
                      22.5, 22.5, 22.5, 22.5,
                      22.5, 22.5, 22.5, 22.5,
