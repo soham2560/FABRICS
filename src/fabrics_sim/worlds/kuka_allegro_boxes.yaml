@@ -10,8 +10,8 @@
 table:
   env_index: all
   type: box
-  scaling: 0.725 1.16 0.03
-  transform: -0.5 0.088 0.115 0. 0. 0. 1.
+  scaling: 0.446 0.797 0.03
+  transform: -0.3605 0.088 0.115 0. 0. 0. 1.
 
 # NOTE: taking out camera1 and camera3 for now because we've physically
 # removed those cameras from the scene. This opens up the work volume
